@@ -1,0 +1,22 @@
+var education = {
+	"schools": [{
+		"name": "Vancouver Film School",
+		"city": "Vancouver, BC",
+		"degree": "Diploma",
+		"year": "2008",
+		"major": "3D Animation and Visual Effects"
+	}],
+	"onlineCourses": [{
+		"name": "Udacity",
+		"title": "Intro to Programming",
+		"degree": "Nanodegree",
+		"year": "2017",
+		"URL": "https://www.udacity.com/course/intro-to-programming-nanodegree--nd000"
+	}, {
+		"name": "Udacity",
+		"title": "Front-end Developer",
+		"degree": "Nanodegree",
+		"year": "2017",
+		"URL": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
+	}]
+}

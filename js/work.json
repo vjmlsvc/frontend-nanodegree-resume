@@ -1,0 +1,27 @@
+var work = {
+	"jobs": [{
+		"employer": "Edgewater Casino",
+		"title": "Floor Manager",
+		"startDate": "November 2012",
+		"endDate": "present",
+		"location": "Vancouver, BC"
+	}, {
+		"employer": "Bank of Montreal",
+		"title": "Customer Service Representative",
+		"startDate": "March 2011",
+		"endDate": "January 2012",
+		"location": "Vancouver, BC"
+	},{
+		"employer": "It has to works",
+		"title": "3D Modeler / Texture Artist",
+		"startDate": "May 2008",
+		"endDate": "December 2010",
+		"location": "Vancouver, BC"
+	}, {
+		"employer": "Rainmaker Entertainment",
+		"title": "3D Modeler / Texture Artist",
+		"startDate": "April 2008",
+		"endDate": "April 2009",
+		"location": "Vancouver, BC"
+	}]
+}

@@ -1,0 +1,21 @@
+var projects = {
+	"jobs": [{
+		"title": "500 Algorithms",
+		"startDate": "September 2016",
+		"endDate": "November 2016",
+		"language": "JavaScript",
+		"teamSize": "Solo"
+	}, {
+		"title": "Creamed",
+		"startDate": "January 2016",
+		"endDate": "present",
+		"language": "C#, Unity",
+		"teamSize": "5 people"
+	}, {
+		"title": "Callisandre",
+		"startDate": "May 2008",
+		"endDate": "December 2012",
+		"language": "Python, MEL, Maya, Photoshop",
+		"teamSize": "3 people"
+	}]
+}
