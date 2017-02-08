@@ -276,22 +276,22 @@ var education = {
         "location": "Vancouver, BC",
         "degree": "Diploma",
         "dates": "September 2006 - December 2007",
-        "majors": "3D Animation and Visual Effects",
-        "URL": "https://www.vfs.edu"
+        "majors": ["3D Animation and Visual Effects"],
+        "url": "https://www.vfs.edu"
     }],
     "onlineCourses": [{
         "school": "Udacity",
         "title": "Intro to Programming",
         "degree": "Nanodegree",
         "dates": "January - February 2017",
-        "URL": "https://www.udacity.com/course/intro-to-programming-" +
+        "url": "https://www.udacity.com/course/intro-to-programming-" +
             "nanodegree--nd000"
     }, {
         "school": "Udacity",
         "title": "Front-end Developer",
         "degree": "Nanodegree",
         "dates": "February - May 2017",
-        "URL": "https://www.udacity.com/course/front-end-web-developer-" +
+        "url": "https://www.udacity.com/course/front-end-web-developer-" +
             "nanodegree--nd001"
     }],
 
@@ -307,13 +307,15 @@ var education = {
             $("#education").append(HTMLschoolStart);
 
             var formattedName = HTMLschoolName.replace("%data%",
-                this.schools[i].name);
+                this.schools[i].name).replace("#", this.schools[i].url);
 
             var formattedDate = HTMLschoolDates.replace("%data%",
                 this.schools[i].dates);
 
-            var formattedMajor = HTMLschoolMajor.replace("%data%",
-                this.schools[i].majors);
+            for (var j = 0; j < this.schools[i].majors.length; j++) {
+                var formattedMajor = HTMLschoolMajor.replace("%data%",
+                    this.schools[i].majors[j]);
+            }
 
             var formattedDegree = HTMLschoolDegree.replace("%data%",
                 this.schools[i].degree);
@@ -325,8 +327,9 @@ var education = {
         for (var j = 0; j < this.onlineCourses.length; j++) {
             $("#education").append(HTMLschoolStart);
 
-            var formattedOnlineClass = HTMLonlineTitle.replace("%data%",
-                this.onlineCourses[j].title);
+            var formattedOnlineClass = HTMLonlineTitle.replace(
+                "%data%", this.onlineCourses[j].title).replace(
+                "#", this.onlineCourses[j].url);
 
             var formattedOnlineDate = HTMLonlineDates.replace("%data%",
                 this.onlineCourses[j].dates);
